@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
 
 body {
   margin: 0;
@@ -10,10 +11,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background-color: aliceblue;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.btn {
+  height: 50px;
+  width: 150px;
+  border: 1px solid gray;
+  border-radius: 7px;
+}
+
+.limit_text {
+  max-height: 100px;/* Adjust the height to limit the number of lines */
+  overflow: hidden;
+  text-overflow: ellipsis;/* Optional: Add ellipsis (...) for text overflow */
+  /* Optional: Prevent text from wrapping */
 }
